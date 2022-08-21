@@ -1,9 +1,9 @@
-import { Statistics } from './Statistics/Statistics';
-import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Section } from './Section/Section';
-import { Notification } from './Notification/Notification';
+import Statistics from './Statistics';
+import FeedbackOptions from './FeedbackOptions';
+import Section from './Section';
+import Notification from './Notification';
 import { Component } from 'react';
-import { Box } from 'components/Box/Box';
+import Box from 'components/Box';
 class App extends Component {
   state = {
     good: 0,

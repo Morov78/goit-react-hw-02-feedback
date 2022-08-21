@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { Box } from 'components/Box/Box';
-export const Notification = ({ title }) => {
+import Box from 'components/Box';
+const Notification = ({ title }) => {
   return (
     <Box mt="40px" as="p">
       {title}
@@ -10,3 +10,4 @@ export const Notification = ({ title }) => {
 Notification.prototype = {
   title: PropTypes.string.isRequired,
 };
+export default Notification;

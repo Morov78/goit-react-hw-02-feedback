@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { Container } from './FeedbackOptions.styled';
-import { Button } from '../Button/Button';
+import Button from '../Button';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <Container display="flex" flex="5px">
       {options.map(optionButton => (
@@ -20,3 +20,4 @@ FeedbackOptions.prototype = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
+export default FeedbackOptions;

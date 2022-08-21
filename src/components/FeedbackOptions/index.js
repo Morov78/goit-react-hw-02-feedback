@@ -1,1 +1,1 @@
-import StatisticControls from './FeedbackOptions';
+export { default } from './FeedbackOptions';

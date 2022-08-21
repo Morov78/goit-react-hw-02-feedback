@@ -1,12 +1,6 @@
 import PropTypes from 'prop-types';
 import { Container, WrapContainer } from './Statistics.styled';
-export const Statistics = ({
-  good,
-  neutral,
-  bad,
-  total,
-  positivePercentage,
-}) => {
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <Container>
       <p>
@@ -39,3 +33,4 @@ Statistics.prototype = {
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired,
 };
+export default Statistics;
